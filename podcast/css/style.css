@@ -1,0 +1,1097 @@
+html {
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, input, button, textarea, p, blockquote, th, td, fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img, fieldset {
+    border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {
+    font-style: normal;
+    font-weight: inherit;
+}
+
+del, ins {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+caption, th {
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before, q:after {
+    content: '';
+}
+
+abbr, acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+sup {
+    vertical-align: baseline;
+}
+
+sub {
+    vertical-align: baseline;
+}
+
+input, button, textarea, select, optgroup, option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+input, button, textarea, select {
+    *font-size: 100%;
+}
+
+cufon cufontext {
+    display: inline-block !important;
+    height: 0 !important;
+    text-indent: -10000in !important;
+    width: 0 !important;
+}
+
+body, html {
+    font: 400 15px 'Ubuntu';
+    color: #2b2b2b;
+}
+
+* {
+    outline: none;
+}
+
+::selection {
+    background: #19adba;
+    color: #ffffff;
+}
+
+::-webkit-selection {
+    background: #19adba;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background: #19adba;
+    color: #ffffff;
+}
+
+@keyframes dots-1 {
+    from {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+}
+
+@keyframes dots-2 {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes dots-3 {
+    from {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes dots-1 {
+    from {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes dots-2 {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes dots-3 {
+    from {
+        opacity: 0;
+    }
+    75% {
+        opacity: 1;
+    }
+}
+
+.enviando .dots span {
+    animation: dots-1 1s infinite steps(1);
+    -webkit-animation: dots-1 1s infinite steps(1);
+}
+
+.enviando .dots span:first-child + span {
+    animation-name: dots-2;
+    -webkit-animation-name: dots-2;
+}
+
+.enviando .dots span:first-child + span + span {
+    animation-name: dots-3;
+    -webkit-animation-name: dots-3;
+}
+
+footer {
+    background: #180328;
+    text-align: center;
+    padding: 90px 0px 25px 0px;
+    color: #fff;
+    font: normal 13px 'Open Sans';
+    margin-top: -60px;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+footer a:link,
+footer a:active,
+footer a:visited {
+    color: #ffffff;
+    font: bold 13px 'Ubuntu';
+    transition: all 0.5s ease;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer a::after {
+    content: '•';
+    display: inline-block;
+    padding: 0px 10px 0 15px;
+    color: #fff;
+}
+
+footer a:last-of-type::after {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+/*RESPONSIVIDADE*/
+
+._320 .mobile {
+    display: block !important;
+}
+
+._320 .desktop {
+    display: none !important;
+}
+
+._640 .mobile, ._1000 .mobile {
+    display: none !important;
+}
+
+._640 .desktop, ._1000 .desktop {
+    display: block !important;
+}
+
+
+._640 footer {
+    font-size: 13px;
+    line-height: 18px;
+}
+
+._640 footer a:link {
+    font-size: 16px;
+}
+
+._640 footer a::after {
+    padding: 0px 10px;
+    color: #1d1e1e;
+}
+
+._320 footer p {
+    font-size: 12px;
+    color: #002d33;
+    line-height: 17px;
+    width: 190px;
+    margin: 0px auto 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+._320 footer p em {
+    display: none;
+}
+
+._320 footer a:link {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+._320 footer a::after {
+    display: none;
+}
+
+
+/* HOME */
+
+/*._1000 .fundoTopo header::before {*/
+    /*content: '';*/
+    /*display: block;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-style: solid;*/
+    /*border-width: 250px 0 0 108px;*/
+    /*border-color: transparent transparent transparent #2f97a5;*/
+    /*left: 0px;*/
+    /*top: 0px;*/
+    /*position: absolute;*/
+/*}*/
+
+/*._1000 .fundoTopo header::after {*/
+    /*content: '';*/
+    /*display: block;*/
+    /*width: 0;*/
+    /*height: 0;*/
+    /*border-style: solid;*/
+    /*border-width: 0 0 250px 108px;*/
+    /*border-color: transparent transparent #2f97a5 transparent;*/
+    /*right: 0px;*/
+    /*top: 0px;*/
+    /*position: absolute;*/
+/*}*/
+
+._1000 .fundoTopo header p {
+    float: right;
+    width: 135px;
+    border: solid 2px #f88400;
+    border-radius: 5px;
+    padding: 14px 19px;
+    box-sizing: border-box;
+    margin-right: 180px;
+    margin-top: 50px;
+    font: normal 14px/18px 'Ubuntu';
+    color: #fff;
+    position: relative;
+    border-bottom-left-radius: 0;
+}
+
+._1000 .fundoTopo header p::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 17px 18px;
+    border-color: transparent transparent #f88400 transparent;
+    left: -18px;
+    bottom: -2px;
+    position: absolute;
+}
+
+._1000 .fundoTopo header p::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 13px 13px;
+    border-color: transparent transparent #f88400 transparent;
+    left: -13px;
+    bottom: 0px;
+    position: absolute;
+}
+
+._1000 .fundoTopo header h1 {
+    float: right;
+    margin-top: 50px;
+    margin-right: 75px;
+}
+
+._1000 .fundoTopo header h1 em {
+    font: 600 26px/26px 'Oswald';
+    color: #ffffff;
+    text-transform: uppercase;
+    display: block;
+    padding-left: 5px;
+}
+
+._1000 .fundoTopo header h1 b {
+    font: 600 60px/90px 'Oswald';
+    color: #ffffff;
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: -0.030em;
+}
+
+._1000 .fundoTopo header h1 span {
+    display: block;
+    text-align: right;
+    font: normal 21px 'Ubuntu';
+    color: #fff;
+    letter-spacing: -0.030em;
+    padding-top: 4px;
+}
+
+._1000 .fundoTopo header h1 span i {
+    font-weight: 700;
+    font-style: normal;
+}
+
+main {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.sobre {
+    float: left;
+    width: 235px;
+}
+
+main section {
+    float: right;
+    width: 510px;
+    padding: 50px 0px 20px 0px;
+}
+
+main section a:link,
+main section a:active,
+main section a:visited {
+    border: solid 2px #f2f2f2;
+    float: left;
+    box-sizing: border-box;
+    width: 48%;
+    margin-bottom: 15px;
+    position: relative;
+    height: 76px;
+    display: block;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+main section a:nth-of-type(2n) {
+    margin-left: 4%;
+}
+
+main section a img {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    transition: all 0.9s ease;
+}
+
+main section a p {
+    position: absolute;
+    left: 82px;
+    top: 15px;
+    font: 700 12px 'Open Sans';
+    color: #bfbfbf;
+    text-transform: uppercase;
+    transition: all 0.9s ease;
+}
+
+main section a h3 {
+    position: absolute;
+    left: 82px;
+    top: 27px;
+    font: 600 21px 'Oswald';
+    color: #180328;
+    letter-spacing: 0.010em;
+    text-transform: uppercase;
+    transition: all 0.6s ease;
+}
+
+main section a span.seta {
+    width: 14px;
+    display: block;
+    position: absolute;
+    right: 13px;
+    top: 52%;
+    transform: translateY(-50%);
+    transition: all 0.6s ease;
+}
+
+main section a span.seta svg path {
+    fill: #ededed;
+    transition: all 0.6s ease;
+}
+
+main section a:hover {
+    background: #fbfbfb; /*border-color: #ffffff;  /* box-shadow: 0px 0px 33px -10px rgba(0,0,0,0.75); */
+}
+
+main section a:hover img {
+    left: 22px;
+}
+
+main section a:hover img {
+    left: -15px;
+    top: -25px;
+    transform: scale(2.0) rotate(-30deg);
+    filter: saturate(0%);
+    opacity: 0.1;
+}
+
+main section a:hover p {
+    left: 89px;
+    color: #180328;
+}
+
+main section a:hover h3 {
+    left: 89px;
+    color: #180328;
+}
+
+main section a:hover span.seta {
+    right: 9px;
+}
+
+main section a:hover span.seta svg path {
+    fill: #2a2a2a;
+}
+
+
+.barras {
+    height: 10px;
+    left: 5%;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 90%;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.bar {
+    background: #180328;
+    bottom: 0px;
+    height: 3px;
+    position: absolute;
+    width: 10%;
+    animation: sound 0ms -800ms linear infinite alternate;
+}
+
+@keyframes sound {
+    0% {
+        opacity: .35;
+        height: 1px;
+    }
+    100% {
+        opacity: 1;
+        height: 8px;
+    }
+}
+
+main section a:hover .bar:nth-child(1) {
+    left: 0%;
+    animation-duration: 474ms;
+}
+
+main section a:hover .bar:nth-child(2) {
+    left: 10%;
+    animation-duration: 433ms;
+}
+
+main section a:hover .bar:nth-child(3) {
+    left: 20%;
+    animation-duration: 407ms;
+}
+
+main section a:hover .bar:nth-child(4) {
+    left: 30%;
+    animation-duration: 458ms;
+}
+
+main section a:hover .bar:nth-child(5) {
+    left: 40%;
+    animation-duration: 400ms;
+}
+
+main section a:hover .bar:nth-child(6) {
+    left: 50%;
+    animation-duration: 427ms;
+}
+
+main section a:hover .bar:nth-child(7) {
+    left: 60%;
+    animation-duration: 451ms;
+}
+
+main section a:hover .bar:nth-child(8) {
+    left: 70%;
+    animation-duration: 419ms;
+}
+
+main section a:hover .bar:nth-child(9) {
+    left: 80%;
+    animation-duration: 487ms;
+}
+
+main section a:hover .bar:nth-child(10) {
+    left: 90%;
+    animation-duration: 442ms;
+}
+
+main section a:hover .barras {
+    opacity: 1;
+}
+
+
+/*ASIDE*/
+.sobre {
+    padding-top: 50px;
+}
+
+.sobre h2 {
+    color: #180328;
+    font: 600 22px/22px 'Oswald';
+    text-transform: uppercase;
+    letter-spacing: 0.010em;
+}
+
+.sobre p {
+    font: normal 13px/22px 'Open Sans';
+    color: #404040;
+    text-align: justify;
+    padding-top: 12px;
+}
+
+.sobre a.linkSimples:first-of-type {
+    margin-top: 15px !important;
+}
+
+.sobre a.linkSimples:link,
+.sobre a.linkSimples:active,
+.sobre a.linkSimples:visited {
+    font: bold 13px "Open Sans";
+    color: #2b2b2b;
+    text-decoration: none;
+    display: block;
+    margin-top: 12px;
+    position: relative;
+    padding-left: 30px;
+    transition: all 0.5s ease;
+}
+
+.sobre a.linkSimples .icon {
+    display: block;
+    float: left;
+    position: absolute;
+    left: 0px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.sobre a.linkSimples .icon svg path {
+    fill: #cbcbcb;
+    transition: all 0.5s ease;
+}
+
+.sobre a.linkSimples.facebook .icon {
+    width: 12px;
+    left: 3px;
+    top: 67%;
+}
+
+.sobre a.linkSimples.youtube .icon {
+    width: 11px;
+    left: 3px;
+    top: 65%;
+}
+
+.sobre a.linkSimples.instagram .icon {
+    width: 16px;
+    top: 64%;
+}
+
+.sobre a.linkSimples.linkedin .icon {
+    width: 18px;
+    top: 64%;
+}
+
+.sobre a.linkSimples:hover {
+    color: #11b5c0;
+}
+
+.sobre a.linkSimples:hover .icon svg path {
+    fill: #11b5c0;
+}
+
+.sobre h3 {
+    font: 600 22px/24px 'Oswald';
+    color: #180328;
+    text-transform: uppercase;
+    margin: 32px 0px 12px 0px;
+}
+
+.sobre a.botaoFacebook:link,
+.sobre a.botaoFacebook:active,
+.sobre a.botaoFacebook:visited {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: #466ebe;
+    border-radius: 4px;
+    position: relative;
+    float: left;
+    margin-right: 9px;
+    transition: all 0.5s ease;
+}
+
+.sobre a.botaoFacebook span {
+    width: 9px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+}
+
+.sobre a.botaoFacebook span svg path {
+    fill: #ffffff;
+}
+
+.sobre a.botaoFacebook:hover {
+    background: #5e90f5;
+}
+
+.sobre a.botaoTwitter:link,
+.sobre a.botaoTwitter:active,
+.sobre a.botaoTwitter:visited {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: #36ade3;
+    border-radius: 4px;
+    float: left;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+.sobre a.botaoTwitter span {
+    width: 14px;
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+}
+
+.sobre a.botaoTwitter span svg path {
+    fill: #ffffff;
+}
+
+.sobre a.botaoTwitter:hover {
+    background: #4ec4f9;
+}
+
+/* EMAIL*/
+.cadastroEmail {
+    width: 970px;
+    margin: 0 auto;
+    background: #f88400;
+    height: 110px;
+    position: relative;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.cadastroEmail .form h4 {
+    font: 300 28px 'Oswald';
+    color: #ffffff;
+    line-height: 110px;
+    text-transform: uppercase;
+    float: left;
+    margin-left: 10%;
+    padding-right: 30px;
+}
+
+.cadastroEmail .form form {
+    float: left;
+    padding: 35px 0 0 0;
+}
+
+.cadastroEmail .form input::placeholder {
+    color: #202020;
+}
+
+.cadastroEmail .form input {
+    display: inline-block;
+    width: 260px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding: 0px 15px;
+    font: normal 14px 'Ubuntu';
+    color: #202020;
+}
+
+.cadastroEmail .form .btn {
+    border: none;
+    font: 800 13px/40px 'Open Sans';
+    color: #ffffff;
+    background: #180328;
+    padding: 0px 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-left: 7px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.cadastroEmail .form .btn:hover {
+    background: #180328;
+}
+
+.cadastroEmail .form .enviando {
+    color: #ffffff;
+    text-align: right;
+    font: 600 15px 'Ubuntu';
+    padding-top: 7px;
+    display: none;
+}
+
+.obrigado .cadastroEmail {
+    height: 70px;
+}
+
+.obrigado .cadastroEmail h4 {
+    font-size: 20px;
+    margin-left: 0px;
+    text-align: center;
+    padding-right: 0px;
+    width: 100%;
+    line-height: 70px;
+}
+
+.obrigado footer {
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+.obrigado .sobre {
+    padding-top: 40px;
+}
+
+.obrigado main section {
+    padding-top: 40px;
+}
+
+._320 .obrigado .cadastroEmail {
+    margin-top: 0px;
+    padding: 35px 25px;
+}
+
+
+/* RESPONSIVIDADE */
+
+._320 .fundoTopo header {
+    max-width: 480px;
+    min-width: 320px;
+    width: initial;
+    margin: 0 auto;
+}
+
+._320 main {
+    max-width: 480px;
+    min-width: 320px;
+    width: initial;
+}
+
+._320 main section {
+    width: 100%;
+    padding-top: 0px;
+    float: initial;
+}
+
+._320 main section a:link,
+._320 main section a:active,
+._320 main section a:visited {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 100%;
+    margin-bottom: 0px;
+    height: 68px;
+}
+
+._320 main section a:nth-of-type(2n) {
+    margin-left: 0px;
+}
+
+._320 .cadastroEmail {
+    max-width: 480px;
+    min-width: 320px;
+    width: initial;
+}
+
+._320 main section a img {
+    width: 40px;
+    left: 50px;
+    top: 14px;
+}
+
+._320 main section a p {
+    left: 102px;
+    top: 13px;
+}
+
+._320 main section a h3 {
+    font-size: 20px;
+    left: 102px;
+    top: 25px;
+}
+
+._320 main section a span.seta {
+    right: 50px;
+}
+
+._320 .fundoTopo header p {
+    background: #f88400;
+    text-align: center;
+    padding: 25px 45px;
+    font: bold 13px 'Open Sans';
+    letter-spacing: -0.010em;
+    color: #ffffff;
+}
+
+._320 .fundoTopo header p.onthego {
+    background: #ffffff;
+    color: #1f1f1f;
+}
+
+._320 .cadastroEmail {
+    background:#f88400;
+    max-width: 480px;
+    min-width: 320px;
+    width: initial;
+    margin: 0 auto;
+    height: initial;
+    padding: 35px 25px 45px 25px;
+    overflow: hidden;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+._320 .cadastroEmail h4 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+._320 .cadastroEmail .form form {
+    padding-top: 15px;
+}
+
+._320 .cadastroEmail .form form input {
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+._320 .cadastroEmail .form .btn {
+    width: 100%;
+    margin: 0px;
+}
+
+._320 .sobre {
+    width: 100%;
+    padding-top: 35px;
+    text-align: center;
+}
+
+._320 .sobre h3 {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+    color: #180328;
+    font-weight: 400;
+    letter-spacing: 0.010em;
+    margin-bottom: 5px;
+}
+
+._320 .sobre .compart {
+    width: 125px;
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    height: 35px;
+    border-radius: 5px;
+    position: relative;
+    margin: 0px 4px;
+}
+
+._320 .sobre .compart::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 21px;
+    background: rgba(0, 0, 0, 0.2);
+    left: 35px;
+    top: 7px;
+    position: absolute;
+}
+
+._320 .sobre .compart em {
+    display: block;
+    float: left;
+}
+
+._320 .sobre .compart em svg path {
+    fill: #ffffff;
+}
+
+._320 .sobre .compart.facebook {
+    background: #507cce;
+}
+
+._320 .sobre .compart.facebook .icon {
+    width: 10px;
+    padding: 9px 0px 0px 14px;
+}
+
+._320 .sobre .compart.whatsapp {
+    background: #29a71a;
+}
+
+._320 .sobre .compart.whatsapp .icon {
+    width: 16px;
+    padding: 9px 0px 0px 14px;
+}
+
+._320 .sobre .compart.whatsapp::after {
+    left: 38px;
+}
+
+._320 .sobre .compart.facebook .texto {
+    float: left;
+    padding: 9px 0 0 24px;
+}
+
+._320 .sobre .compart.whatsapp .texto {
+    float: left;
+    padding: 9px 0 0 18px;
+}
+
+._320 .sobre .fundoAzul {
+    background: #f88400;
+    margin-top: 35px;
+    padding: 35px 35px;
+}
+
+._320 .sobre h2 {
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0.010em;
+}
+
+._320 .sobre p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+._320 .sobre p b {
+    font-weight: normal;
+    color: #c9fcff;
+}
+
+._320 .sobre a.linkSimples:link,
+._320 .sobre a.linkSimples:active,
+._320 .sobre a.linkSimples:visited {
+    background: #ffffff;
+    width: 190px;
+    margin: 6px auto 0 auto;
+    font: bold 13px "Open Sans";
+    color: #2b2b2b;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+    padding: 8px 0px;
+}
+
+._320 footer {
+    margin-top: 0px;
+    padding-top: 30px;
+    background: #180328;
+}
+
+._320 .sobre a.linkSimples .icon {
+    transform: translateY(15%);
+    display: inline-block;
+    position: initial;
+    top: initial;
+    float: initial;
+    margin-right: 10px;
+}
+
+._320 .cadastroEmail .form .enviando {
+    text-align: center;
+}
+
+._320 footer p {
+    color: #87cfd6;
+}
+
+
+
+#conversion-form .form-group label.error {
+    display: none!important
+}
+#conversion-form input.error {
+    border: 1px solid #ee2d2d;
+}
+
+#conversion-form .error {
+    border: 1px solid #ee2d2d;
+}
+
+
+
+.news_subscript_feedback {
+    color: #fff;
+}
+
+#email-error {
+    display: none!important;
+}
