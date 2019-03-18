@@ -1440,7 +1440,7 @@
                                                                                                                    class="elementor-field-label elementor-screen-only">Email</label><input
                                                                                                                 size="1"
                                                                                                                 type="email"
-                                                                                                                name="form_fields[email]"
+                                                                                                                name="email"
                                                                                                                 id="form-field-email"
                                                                                                                 class="elementor-field elementor-size-sm  elementor-field-textual"
                                                                                                                 placeholder="Email"
@@ -1454,6 +1454,11 @@
 																						<span class="elementor-button-text">INSCREVA-SE</span>
 													</span>
                                                                                                             </button>
+                                                                                                            <br>
+                                                                                                            <div class="news_subscript_feedback success" style="display: none;">Cadastro realizado com sucesso.</div>
+                                                                                                            <div class="news_subscript_feedback error" style="display: none;">Verifique o preenchimento dos campos e
+                                                                                                                tente novamente.
+                                                                                                            </div>
                                                                                                         </div>
                                                                                                     </div>
                                                                                                 </form>
@@ -2488,5 +2493,41 @@
 <script type='text/javascript'
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
 
+<script type="text/javascript">
+    $(function () {
+        'use strict';
+        $('#newsletter').validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true
+                }
+            }
+        });
+        $('#newsletter').on('submit', function (e) {
+            e.preventDefault();
+            $('.news_subscript_feedback').hide();
+            var form = $(this);
+            if (form.valid()) {
+                $.ajax({
+                    type: "POST",
+                    url: $(form).attr('action'),
+                    data: $(form).serialize(),
+                    dataType: 'json',
+                    complete: function (resp) {
+                        form.find('[name=email]').val('');
+                        alert('Você se cadastrou com sucesso');
+                        form.hide();
+                        $('.news_subscript_feedback.success').fadeIn(500, function () {
+                            $(this).delay(5000).fadeOut(500, function () {
+                                form.show();
+                            });
+                        });
+                    }
+                });
+            }
+        });
+    });
+</script>
 </body>
 </html>
