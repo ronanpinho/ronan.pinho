@@ -3422,3 +3422,11 @@ footer {
     display: flex;
     align-items: center;
 }
+
+.icon-alt-local {
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: 70px;
+    height: 70px;
+}
