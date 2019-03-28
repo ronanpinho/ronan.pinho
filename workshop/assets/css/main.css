@@ -3347,3 +3347,14 @@ footer {
 #fotos {
     padding-bottom: 10px;
 }
+
+#contact-text .icone {
+    text-align: center;
+    padding: 0 12px;
+    font-size: 55px;
+    vertical-align: middle;
+    color: #ea8324;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
